@@ -1,0 +1,6 @@
+{"time":"2026-09-02T05:00:00Z","model":"Toyota","type":"TPMS","id":"A1B2C3D4","pressure_kPa":220.0,"temperature_C":24.0,"battery_ok":1,"status":"OK","rssi":-41.2,"frequency":433920000}
+{"time":"2026-09-02T05:00:01Z","model":"Acurite-Tower","id":1234,"temperature_C":19.5}
+{"time":"2026-09-02T05:00:02Z","model":"Schrader TPMS","id":"00FF11EE","pressure_PSI":32.0,"temperature_C":27.0,"battery":"OK","snr":14.1}
+{not-json
+{"time":"2026-09-02T05:00:30Z","model":"Toyota","type":"TPMS","id":"A1B2C3D4","pressure_kPa":221.0,"temperature_C":25.0,"battery_ok":1,"status":"OK","rssi":-40.8,"frequency":433920000}
+{"time":"2026-09-02T05:00:32Z","model":"Schrader TPMS","id":"00FF11EE","pressure_PSI":33.0,"temperature_C":27.0,"battery":"LOW","snr":14.4}

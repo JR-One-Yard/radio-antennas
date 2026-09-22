@@ -1,0 +1,8 @@
+{
+  "idle": "dump1090",
+  "bind": "127.0.0.1",
+  "planes_port": 10900,
+  "census_port": 4330,
+  "device_serial": "",
+  "note": "Copy to host.json (gitignored). Set device_serial from rtl_test. HTTP listens on localhost; Tailscale Serve can wrap https://the-mini.example.ts.net:10900/ (tailnet only, not Funnel). Never 0.0.0.0. idle dump1090 = telescopic; idle ism-scan = 433 whip."
+}

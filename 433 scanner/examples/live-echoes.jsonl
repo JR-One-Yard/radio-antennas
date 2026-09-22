@@ -1,0 +1,212 @@
+stderr:Detected OOK package	2026-09-04T11:58:59.089173
+{"time" : "2026-09-04T11:58:59.089173", "protocol" : 153, "model" : "Cotech-367959", "id" : 53, "battery_ok" : 1, "temperature_F" : 60.600, "humidity" : 83, "rain_mm" : 318.600, "wind_dir_deg" : 338, "wind_avg_m_s" : 0.000, "wind_max_m_s" : 0.000, "light_lux" : 0, "uvi" : 0.000, "mic" : "CRC", "mod" : "ASK", "freq" : 433.927, "rssi" : -11.161, "snr" : 12.175, "noise" : -23.336}
+stderr:Analyzing pulses...
+stderr:Total count:  107,  width: 124.01 ms		(126991 S)
+stderr:Pulse width distribution:
+stderr: [ 0] count:   87,  width:  494 us [460;513]	( 506 S)
+stderr: [ 1] count:   20,  width:  976 us [968;983]	( 999 S)
+stderr:Gap width distribution:
+stderr: [ 0] count:   85,  width:  481 us [465;514]	( 493 S)
+stderr: [ 1] count:   21,  width:  979 us [969;986]	(1002 S)
+stderr:Pulse+gap period distribution:
+stderr: [ 0] count:   76,  width:  977 us [968;985]	(1000 S)
+stderr: [ 1] count:   19,  width: 1464 us [1446;1488]	(1499 S)
+stderr: [ 2] count:   11,  width: 1952 us [1950;1958]	(1999 S)
+stderr:Gap+pulse period distribution:
+stderr: [ 0] count:    1,  width:  471 us [471;471]	( 482 S)
+stderr: [ 1] count:   73,  width:  976 us [967;985]	( 999 S)
+stderr: [ 2] count:    8,  width: 1953 us [1951;1959]	(2000 S)
+stderr: [ 3] count:   25,  width: 1466 us [1447;1488]	(1501 S)
+stderr:Timing distribution:
+stderr: [ 0] count:  172,  width:  487 us [460;514]	( 499 S)
+stderr: [ 1] count:   41,  width:  977 us [968;986]	(1000 S)
+stderr: [ 2] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+stderr:Level estimates [high, low]:   1254,     76
+stderr:RSSI: -11.2 dB SNR: 12.2 dB Noise: -23.3 dB
+stderr:Frequency offsets [F1, F2]:     447,      0	(+7.0 kHz, +0.0 kHz)
+stderr:Guessing modulation: Manchester coding
+stderr:view at https://triq.org/pdv/#AAB10301E703D02710808080808080808081919180908180808090819191918080808080808080808080808080808080809191809180808080908180809080818091808080808080908080808190808180919180908180808080808080808080808080808080808080808080809081809081808255
+stderr:Attempting demodulation... short_width: 494, long_width: 0, reset_limit: 987, sync_width: 0
+stderr:Use a flex decoder with -X 'n=name,m=OOK_MC_ZEROBIT,s=494,l=0,r=987'
+stderr:
+stderr:Detected OOK package	2026-09-04T11:59:15.089159
+{"time" : "2026-09-04T11:59:15.089159", "protocol" : 153, "model" : "Cotech-367959", "id" : 53, "battery_ok" : 1, "temperature_F" : 60.500, "humidity" : 83, "rain_mm" : 318.600, "wind_dir_deg" : 338, "wind_avg_m_s" : 0.000, "wind_max_m_s" : 0.000, "light_lux" : 0, "uvi" : 0.000, "mic" : "CRC", "mod" : "ASK", "freq" : 433.930, "rssi" : -11.065, "snr" : 12.818, "noise" : -23.883}
+{"time" : "2026-09-04T11:59:15.089159", "protocol" : 153, "model" : "Cotech-367959", "id" : 53, "battery_ok" : 1, "temperature_F" : 60.500, "humidity" : 83, "rain_mm" : 318.600, "wind_dir_deg" : 338, "wind_avg_m_s" : 0.000, "wind_max_m_s" : 0.000, "light_lux" : 0, "uvi" : 0.000, "mic" : "CRC", "mod" : "ASK", "freq" : 433.930, "rssi" : -11.065, "snr" : 12.818, "noise" : -23.883}
+stderr:Analyzing pulses...
+stderr:Total count:  213,  width: 254.39 ms		(260491 S)
+stderr:Pulse width distribution:
+stderr: [ 0] count:  171,  width:  495 us [446;514]	( 507 S)
+stderr: [ 1] count:   42,  width:  975 us [967;984]	( 998 S)
+stderr:Gap width distribution:
+stderr: [ 0] count:  167,  width:  479 us [462;518]	( 491 S)
+stderr: [ 1] count:   44,  width:  979 us [971;1042]	(1002 S)
+stderr: [ 2] count:    1,  width: 5377 us [5377;5377]	(5506 S)
+stderr:Pulse+gap period distribution:
+stderr: [ 0] count:  153,  width:  976 us [913;988]	( 999 S)
+stderr: [ 1] count:   30,  width: 1464 us [1445;1489]	(1499 S)
+stderr: [ 2] count:   28,  width: 1954 us [1948;2016]	(2001 S)
+stderr: [ 3] count:    1,  width: 5872 us [5872;5872]	(6013 S)
+stderr:Gap+pulse period distribution:
+stderr: [ 0] count:    1,  width:  475 us [475;475]	( 486 S)
+stderr: [ 1] count:  145,  width:  976 us [966;985]	( 999 S)
+stderr: [ 2] count:   20,  width: 1953 us [1950;1961]	(2000 S)
+stderr: [ 3] count:   46,  width: 1465 us [1446;1489]	(1500 S)
+stderr: [ 4] count:    1,  width: 5856 us [5856;5856]	(5997 S)
+stderr:Timing distribution:
+stderr: [ 0] count:  338,  width:  487 us [446;518]	( 499 S)
+stderr: [ 1] count:   86,  width:  977 us [967;1042]	(1000 S)
+stderr: [ 2] count:    1,  width: 5377 us [5377;5377]	(5506 S)
+stderr: [ 3] count:    1,  width: 10001 us [10001;10001]	(10241 S)
+stderr:Level estimates [high, low]:   1282,     67
+stderr:RSSI: -11.1 dB SNR: 12.8 dB Noise: -23.9 dB
+stderr:Frequency offsets [F1, F2]:     612,      0	(+9.6 kHz, +0.0 kHz)
+stderr:Guessing modulation: Pulse Width Modulation with multiple packets
+stderr:view at https://triq.org/pdv/#AAB074040101E703D0150027108080808080808080819191809081808080908191919180808080808080808080808080808080808091918091808080809081808090808180918080808080809080808081908191919180908180808080808080808080808080808080808080808080809180809180808255+AAB075040101E703D015002710808080808080808080819191809081808080908191919180808080808080808080808080808080808091918091808080809081808090808180918080808080809080808081908191919180908180808080808080808080808080808080808080808080809180809180808355
+stderr:Attempting demodulation... short_width: 495, long_width: 975, reset_limit: 5378, sync_width: 0
+stderr:Use a flex decoder with -X 'n=name,m=OOK_PWM,s=495,l=975,r=5378,g=1043,t=192,y=0'
+stderr:
+stderr:Detected OOK package	2026-09-04T12:02:27.100684
+stderr:Analyzing pulses...
+stderr:Total count:    8,  width: 2.01 ms		( 2062 S)
+stderr:Pulse width distribution:
+stderr: [ 0] count:    1,  width:   23 us [23;23]	(  24 S)
+stderr: [ 1] count:    2,  width:   33 us [31;35]	(  34 S)
+stderr: [ 2] count:    2,  width:   54 us [48;60]	(  55 S)
+stderr: [ 3] count:    2,  width:   13 us [13;14]	(  13 S)
+stderr: [ 4] count:    1,  width:    0 us [0;0]	(   0 S)
+stderr:Gap width distribution:
+stderr: [ 0] count:    1,  width:   29 us [29;29]	(  30 S)
+stderr: [ 1] count:    1,  width:  247 us [247;247]	( 253 S)
+stderr: [ 2] count:    2,  width:  651 us [646;657]	( 667 S)
+stderr: [ 3] count:    1,  width:  144 us [144;144]	( 147 S)
+stderr: [ 4] count:    1,  width:   21 us [21;21]	(  22 S)
+stderr: [ 5] count:    1,  width:   45 us [45;45]	(  46 S)
+stderr:Pulse+gap period distribution:
+stderr: [ 0] count:    1,  width:   53 us [53;53]	(  54 S)
+stderr: [ 1] count:    1,  width:  278 us [278;278]	( 285 S)
+stderr: [ 2] count:    2,  width:  688 us [671;706]	( 705 S)
+stderr: [ 3] count:    1,  width:  191 us [191;191]	( 196 S)
+stderr: [ 4] count:    1,  width:   34 us [34;34]	(  35 S)
+stderr: [ 5] count:    1,  width:   80 us [80;80]	(  82 S)
+stderr:Gap+pulse period distribution:
+stderr: [ 0] count:    1,  width:   23 us [23;23]	(  24 S)
+stderr: [ 1] count:    1,  width:   61 us [61;61]	(  62 S)
+stderr: [ 2] count:    1,  width:  307 us [307;307]	( 314 S)
+stderr: [ 3] count:    2,  width:  693 us [692;694]	( 710 S)
+stderr: [ 4] count:    1,  width:  156 us [156;156]	( 160 S)
+stderr: [ 5] count:    1,  width:   35 us [35;35]	(  36 S)
+stderr: [ 6] count:    1,  width:   45 us [45;45]	(  46 S)
+stderr:Timing distribution:
+stderr: [ 0] count:    2,  width:   22 us [21;23]	(  23 S)
+stderr: [ 1] count:    3,  width:   31 us [29;35]	(  32 S)
+stderr: [ 2] count:    3,  width:   51 us [45;60]	(  52 S)
+stderr: [ 3] count:    2,  width:   13 us [13;14]	(  13 S)
+stderr: [ 4] count:    1,  width:    0 us [0;0]	(   0 S)
+stderr: [ 5] count:    1,  width:  247 us [247;247]	( 253 S)
+stderr: [ 6] count:    2,  width:  651 us [646;657]	( 667 S)
+stderr: [ 7] count:    1,  width:  144 us [144;144]	( 147 S)
+stderr: [ 8] count:    1,  width:   10 us [10;10]	(  10 S)
+stderr:Level estimates [high, low]:   1000,     78
+stderr:RSSI: -12.1 dB SNR: 11.1 dB Noise: -23.2 dB
+stderr:Frequency offsets [F1, F2]:     419,      0	(+6.5 kHz, +0.0 kHz)
+stderr:Guessing modulation: No clue...
+stderr:
+stderr:Detected OOK package	2026-09-04T12:02:27.103585
+stderr:Analyzing pulses...
+stderr:Total count:    8,  width: 2.38 ms		( 2433 S)
+stderr:Pulse width distribution:
+stderr: [ 0] count:    2,  width:   43 us [39;48]	(  44 S)
+stderr: [ 1] count:    3,  width:   24 us [24;25]	(  25 S)
+stderr: [ 2] count:    2,  width:   31 us [31;31]	(  32 S)
+stderr: [ 3] count:    1,  width:    0 us [0;0]	(   0 S)
+stderr:Gap width distribution:
+stderr: [ 0] count:    2,  width:  941 us [867;1016]	( 964 S)
+stderr: [ 1] count:    1,  width:   87 us [87;87]	(  89 S)
+stderr: [ 2] count:    2,  width:   25 us [25;26]	(  26 S)
+stderr: [ 3] count:    1,  width:  119 us [119;119]	( 122 S)
+stderr: [ 4] count:    1,  width:   12 us [12;12]	(  12 S)
+stderr:Pulse+gap period distribution:
+stderr: [ 0] count:    2,  width:  980 us [898;1063]	(1004 S)
+stderr: [ 1] count:    1,  width:  111 us [111;111]	( 114 S)
+stderr: [ 2] count:    2,  width:   54 us [51;58]	(  55 S)
+stderr: [ 3] count:    1,  width:  158 us [158;158]	( 162 S)
+stderr: [ 4] count:    1,  width:   36 us [36;36]	(  37 S)
+stderr:Gap+pulse period distribution:
+stderr: [ 0] count:    1,  width:   48 us [48;48]	(  49 S)
+stderr: [ 1] count:    2,  width:  969 us [898;1040]	( 992 S)
+stderr: [ 2] count:    2,  width:  131 us [118;144]	( 134 S)
+stderr: [ 3] count:    1,  width:   65 us [65;65]	(  67 S)
+stderr: [ 4] count:    1,  width:   37 us [37;37]	(  38 S)
+stderr: [ 5] count:    1,  width:   25 us [25;25]	(  26 S)
+stderr:Timing distribution:
+stderr: [ 0] count:    2,  width:   43 us [39;48]	(  44 S)
+stderr: [ 1] count:    5,  width:   24 us [24;26]	(  25 S)
+stderr: [ 2] count:    2,  width:   31 us [31;31]	(  32 S)
+stderr: [ 3] count:    1,  width:    0 us [0;0]	(   0 S)
+stderr: [ 4] count:    2,  width:  941 us [867;1016]	( 964 S)
+stderr: [ 5] count:    1,  width:   87 us [87;87]	(  89 S)
+stderr: [ 6] count:    1,  width:  119 us [119;119]	( 122 S)
+stderr: [ 7] count:    2,  width:   11 us [10;12]	(  11 S)
+stderr:Level estimates [high, low]:   1000,     53
+stderr:RSSI: -12.1 dB SNR: 12.8 dB Noise: -24.9 dB
+stderr:Frequency offsets [F1, F2]:     457,      0	(+7.1 kHz, +0.0 kHz)
+stderr:Guessing modulation: Pulse Width Modulation with sync/delimiter
+stderr:view at https://triq.org/pdv/#AAB0130801002A0018001F000003AD00560077000A8455+AAB0140801002A0018001F000003AD00560077000A95A455+AAB0140801002A0018001F000003AD00560077000AA18655+AAB0150801002A0018001F000003AD00560077000A9791B755
+stderr:Attempting demodulation... short_width: 24, long_width: 43, reset_limit: 1017, sync_width: 31
+stderr:Use a flex decoder with -X 'n=name,m=OOK_PWM,s=24,l=43,r=1017,g=0,t=0,y=31'
+stderr:
+stderr:Detected OOK package	2026-09-04T12:02:27.106994
+stderr:Analyzing pulses...
+stderr:Total count:   17,  width: 2.89 ms		( 2963 S)
+stderr:Pulse width distribution:
+stderr: [ 0] count:    3,  width:   21 us [20;22]	(  21 S)
+stderr: [ 1] count:    2,  width:   46 us [43;50]	(  47 S)
+stderr: [ 2] count:    6,  width:   27 us [24;32]	(  28 S)
+stderr: [ 3] count:    2,  width:   62 us [59;64]	(  63 S)
+stderr: [ 4] count:    2,  width:   10 us [10;10]	(  10 S)
+stderr: [ 5] count:    1,  width:  116 us [116;116]	( 119 S)
+stderr: [ 6] count:    1,  width:    0 us [0;0]	(   0 S)
+stderr:Gap width distribution:
+stderr: [ 0] count:    3,  width:   91 us [89;94]	(  93 S)
+stderr: [ 1] count:    3,  width:  144 us [124;155]	( 147 S)
+stderr: [ 2] count:    4,  width:   48 us [47;50]	(  49 S)
+stderr: [ 3] count:    1,  width:   37 us [37;37]	(  38 S)
+stderr: [ 4] count:    2,  width:  114 us [112;117]	( 117 S)
+stderr: [ 5] count:    1,  width: 1066 us [1066;1066]	(1092 S)
+stderr: [ 6] count:    1,  width:   67 us [67;67]	(  69 S)
+stderr: [ 7] count:    1,  width:   14 us [14;14]	(  14 S)
+stderr:Pulse+gap period distribution:
+stderr: [ 0] count:    5,  width:  100 us [90;113]	( 102 S)
+stderr: [ 1] count:    4,  width:  140 us [127;152]	( 143 S)
+stderr: [ 2] count:    3,  width:  192 us [180;210]	( 197 S)
+stderr: [ 3] count:    1,  width: 1093 us [1093;1093]	(1119 S)
+stderr: [ 4] count:    2,  width:   65 us [60;71]	(  67 S)
+stderr: [ 5] count:    1,  width:   35 us [35;35]	(  36 S)
+stderr:Gap+pulse period distribution:
+stderr: [ 0] count:    1,  width:   20 us [20;20]	(  20 S)
+stderr: [ 1] count:    7,  width:  131 us [106;146]	( 134 S)
+stderr: [ 2] count:    2,  width:  199 us [180;220]	( 204 S)
+stderr: [ 3] count:    3,  width:   80 us [71;92]	(  82 S)
+stderr: [ 4] count:    1,  width:   63 us [63;63]	(  65 S)
+stderr: [ 5] count:    1,  width: 1076 us [1076;1076]	(1102 S)
+stderr: [ 6] count:    1,  width:  163 us [163;163]	( 167 S)
+stderr: [ 7] count:    1,  width:   14 us [14;14]	(  14 S)
+stderr:Timing distribution:
+stderr: [ 0] count:    3,  width:   21 us [20;22]	(  21 S)
+stderr: [ 1] count:    6,  width:   47 us [43;50]	(  48 S)
+stderr: [ 2] count:    6,  width:   27 us [24;32]	(  28 S)
+stderr: [ 3] count:    3,  width:   63 us [59;67]	(  65 S)
+stderr: [ 4] count:    2,  width:   10 us [10;10]	(  10 S)
+stderr: [ 5] count:    5,  width:  112 us [94;124]	( 115 S)
+stderr: [ 6] count:    1,  width:    0 us [0;0]	(   0 S)
+stderr: [ 7] count:    2,  width:   90 us [89;92]	(  92 S)
+stderr: [ 8] count:    2,  width:  153 us [151;155]	( 157 S)
+stderr: [ 9] count:    1,  width:   37 us [37;37]	(  38 S)
+stderr: [10] count:    1,  width: 1066 us [1066;1066]	(1092 S)
+stderr: [11] count:    1,  width:   14 us [14;14]	(  14 S)
+stderr: [12] count:    1,  width:    6 us [6;6]	(   6 S)
+stderr:Level estimates [high, low]:   1000,     51
+stderr:RSSI: -12.1 dB SNR: 12.9 dB Noise: -25.1 dB
+stderr:Frequency offsets [F1, F2]:     653,      0	(+10.2 kHz, +0.0 kHz)
+stderr:Guessing modulation: No clue...
+stderr:

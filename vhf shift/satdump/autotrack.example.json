@@ -1,0 +1,58 @@
+{
+  "parameters": {
+    "source": "rtlsdr",
+    "samplerate": 1.024e6,
+    "gain": 40,
+    "bias": false,
+    "initial_frequency": 137.9e6,
+    "fft_enable": false
+  },
+  "output_folder": "./captures/satdump",
+  "qth": {
+    "lat": 0.0,
+    "lon": 0.0,
+    "alt": 50
+  },
+  "http_server": "127.0.0.1:8081",
+  "tracking": {
+    "autotrack_cfg": {
+      "autotrack_min_elevation": 20.0,
+      "stop_sdr_when_idle": true,
+      "multi_mode": false
+    }
+  },
+  "tracked_objects": [
+    {
+      "norad": 59051,
+      "min_elevation": 20.0,
+      "downlinks": [
+        {
+          "frequency": 137900000,
+          "record": true,
+          "live": true,
+          "pipeline_name": "meteor_m2-x_lrpt",
+          "pipeline_params": {
+            "dc_block": true,
+            "fill_missing": true
+          }
+        }
+      ]
+    },
+    {
+      "norad": 57166,
+      "min_elevation": 20.0,
+      "downlinks": [
+        {
+          "frequency": 137900000,
+          "record": true,
+          "live": true,
+          "pipeline_name": "meteor_m2-x_lrpt",
+          "pipeline_params": {
+            "dc_block": true,
+            "fill_missing": true
+          }
+        }
+      ]
+    }
+  ]
+}

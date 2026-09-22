@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planes we are hearing</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    html, body { margin: 0; height: 100%; font-family: ui-sans-serif, system-ui, sans-serif; }
+    #map { height: 100%; }
+    #hud {
+      position: absolute; z-index: 1000; left: 12px; top: 12px;
+      background: #111; color: #fff; padding: 10px 14px; border-radius: 10px;
+      max-width: 22rem; line-height: 1.35;
+    }
+    #hud strong { font-size: 1.4rem; }
+    #list { margin: 8px 0 0; padding: 0; list-style: none; }
+    #list li { font-size: 0.95rem; }
+    .stale { color: #fbbf24; }
+  </style>
+</head>
+<body>
+  <div id="hud">
+    <div><strong id="count">…</strong> planes</div>
+    <div id="status">loading</div>
+    <ul id="list"></ul>
+  </div>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map("map").setView([0, 0], 2);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap",
+    }).addTo(map);
+    const markers = new Map();
+
+    async function tick() {
+      try {
+        const res = await fetch("aircraft.json?t=" + Date.now());
+        const data = await res.json();
+        const planes = (data.aircraft || []).filter((p) => p.hex);
+        document.getElementById("count").textContent = planes.length;
+        document.getElementById("status").textContent =
+          planes.length ? "live from this radio" : "waiting for a ping";
+        document.getElementById("status").className = "";
+        const seen = new Set();
+        const items = [];
+        for (const p of planes) {
+          const name = (p.flight || p.hex).trim();
+          const alt = p.alt_baro === "ground" ? "on the ground" : p.alt_baro ? p.alt_baro + " ft" : "";
+          items.push("<li>" + name + (alt ? " — " + alt : "") + "</li>");
+          seen.add(p.hex);
+          if (p.lat == null || p.lon == null) continue;
+          const html = "<b>" + name + "</b><br>" + alt;
+          if (markers.has(p.hex)) {
+            markers.get(p.hex).setLatLng([p.lat, p.lon]).setPopupContent(html);
+          } else {
+            markers.set(p.hex, L.marker([p.lat, p.lon]).addTo(map).bindPopup(html));
+          }
+        }
+        document.getElementById("list").innerHTML = items.join("");
+        for (const hex of [...markers.keys()]) {
+          if (!seen.has(hex)) {
+            map.removeLayer(markers.get(hex));
+            markers.delete(hex);
+          }
+        }
+      } catch (err) {
+        document.getElementById("status").textContent = "map paused (radio busy or off)";
+        document.getElementById("status").className = "stale";
+      }
+    }
+    tick();
+    setInterval(tick, 1000);
+  </script>
+</body>
+</html>

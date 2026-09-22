@@ -1,0 +1,7 @@
+Detected FSK package 2026-09-04T10:52:36
+Analyzing pulses...
+Total count:   26,  width: 3.03 ms		( 3100 S)
+RSSI: -12.1 dB SNR: 15.7 dB Noise: -27.8 dB
+Frequency offsets [F1, F2]:    4306,  -1172	(+67.3 kHz, -18.3 kHz)
+Guessing modulation: No clue...
+view at https://triq.org/pdv/#AAB103000000330068

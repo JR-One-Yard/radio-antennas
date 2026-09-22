@@ -1,0 +1,6 @@
+{
+  "lat": null,
+  "lon": null,
+  "alt_m": 50,
+  "note": "Copy to qth.json and fill lat/lon/alt. Pass prediction is wrong until you do."
+}
